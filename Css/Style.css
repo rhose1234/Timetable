@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --primary-color: #d3d3d3;
+  --secondary-color: rgb(77,77,141);
+  --button-color: #1F2F6D;
+  --text-color: #333;
+  --border-color: #64658fb9;
+  --btn-text: #f4f4f4;
+  --delete-btn: rgb(192, 27, 27);
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+   
+    text-decoration: none  ;
 }
 .navbar{
-    background-color: #ebebeb  !important;
+    background-color: var(--primary-color)  !important;
+    
   }
   
   .navbar-brand{
-      font-size: 25px;
+      color: var(--text-color);
+      font-size: 20px;
       font-weight: 700;
   }
   .navbar-brand img{
@@ -18,7 +31,28 @@
   }
   .nav-link{
     margin-left: 20px !important;
-    color: #000000 !important;
-    font-size: 16px !important;
+    color: var(--text-color) !important;
+    font-size: 18px !important;
     font-weight: 500 !important;
+  }
+ #Hero-section{
+  background-color: var(--p);
+
+  }
+  #Hero-section a{
+    background-color: transparent ;
+    border: 2px solid var(--button-color);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 50px ;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600 ;
+  }
+  #Features .card1{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   border-radius: 15px;
+   padding: 25px ;
+
   }
