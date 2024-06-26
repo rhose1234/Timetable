@@ -2,8 +2,8 @@
 :root{
   --primary-color: #d3d3d3;
   --secondary-color: rgb(77,77,141);
-  --button-color: #29166F;
-  --text-color: #333;
+  --button-color: #0C0CA5;
+  --text-color: #000000;
   --border-color: #64658fb9;
   --btn-text: #f4f4f4;
   --delete-btn: rgb(192, 27, 27);
@@ -13,7 +13,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    text-decoration: none  ;
+    text-decoration: none !important ;
 }
 nav{
       background-color: #ffffff;
@@ -35,10 +35,24 @@ nav{
     font-weight: 500 !important;
   }
  #Hero-section{
-  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  background: url('/Images/back.png') center;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  margin-bottom: 100px;
+  color: #ffffff;
+  
+  }
+  .Hero-overlay{
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  width: 100%;
   }
   #Hero-section h1 span{
   color: var(--button-color);
+ 
   }
   #Hero-section a{
     background-color: var(--button-color) ;
@@ -62,5 +76,12 @@ nav{
     width: 50px ;
   }
 footer{
-    background-color: var(--border-color);
+    background-color: var(--primary-color);
+    color: var(--text-color) !important;
+  }
+  footer a {
+   
+    color: var(--text-color)!important ;
+    font-weight: 800 !important  ;
+    font-size: 16px!important ;
   }
