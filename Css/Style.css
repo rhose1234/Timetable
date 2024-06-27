@@ -22,17 +22,32 @@ nav{
   
   .navbar-brand{
       color: var(--btn-text);
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600;
   }
   .navbar-brand img{
-       width: 30px;
+       width: 38px;
   }
   .nav-link{
     margin-left: 20px !important;
     color: var(--text-color) !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
+  }
+  ul li a.sign-up{
+    border: 2px solid #0C0CA5;
+    border-radius: 15px;
+    background-color: transparent;
+    width: auto;
+    font-weight: 500;
+  }
+   ul li a.login{
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #0C0CA5;
+    width: auto;
+    font-weight: 500;
+    color: #ffffff !important;
   }
  #Hero-section{
   height: 100vh;
@@ -66,9 +81,10 @@ nav{
     font-weight: 600 ;
   }
   #Features .card1{
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
    border-radius: 10px;
-   padding: 80px ;
+   padding: 100px ;
+   width: auto;
    
 
   }
@@ -76,12 +92,22 @@ nav{
     width: 50px ;
   }
 footer{
-    background-color: var(--primary-color);
+    background-color: var(--btn-text);
     color: var(--text-color) !important;
+  }
+  footer img{
+    width: 60px;
+  }
+  footer h5 {
+   
+    color: var(--text-color)!important ;
+    font-weight: 500 !important  ;
+    font-size: 18px!important ;
+    text-align: left;
   }
   footer a {
    
     color: var(--text-color)!important ;
-    font-weight: 800 !important  ;
+    font-weight: 400 !important  ;
     font-size: 16px!important ;
   }
