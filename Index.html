@@ -138,6 +138,7 @@
         },
       };
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -183,24 +184,37 @@
       
 
 
-    <section id="Hero-section" class="min-h-screen w-full flex items-center justify-center">
-    <div class="Hero-overlay min-h-screen w-full flex items-center justify-center">
+    <section id="Hero-section" class="min-h-screen w-full flex items-center justify-center relative">
+    <div class="swiper-container Hero-overlay min-h-screen w-full absolute top-0 left-0 z-0">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="Images/stt.jpg" alt="Slide 1" class="w-full h-full object-cover">
+            </div>
+            <div class="swiper-slide">
+                <img src="Images/back.png" alt="Slide 2" class="w-full h-full object-cover">
+            </div>
+           
+            
+        </div>
+    </div>
+    <div class="Hero-overlay min-h-screen w-full flex items-center justify-center relative z-10">
         <div class="container mx-auto flex flex-col items-center text-center">
             <h1 class="font-extrabold text-white text-5xl" data-aos="flip-right">
                 Effortlessly Manage <br />
                 Your <span class="text-button">Academic</span> Schedule
             </h1>
-            <p class="mt-12 text-white text-sm font-normal" >
+            <p class="mt-12 text-white text-sm font-normal">
                 E-timetable is designed to help ogitech students stay organized and up to date with their class and exam schedules,
                 <br />
                 it ensures that you never miss an important opportunity.
             </p>
-            <div class="mt-16 ">
+            <div class="mt-16">
                 <a href="login.html" class="rounded-xl p-3 px-5 bg-button text-white text-sm font-semibold">Get started</a>
             </div>
         </div>
     </div>
 </section>
+
 
 
     <section class="about min-h-screen" id="About">
@@ -303,6 +317,8 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 <script>
     const navToggle = document.getElementById('nav-toggle');
@@ -312,6 +328,21 @@
         navContent.classList.toggle('hidden');
     });
 </script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    });
+</script>
+
     <script src="Js/aos.js"></script>
     
     <script>
